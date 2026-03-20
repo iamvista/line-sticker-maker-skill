@@ -3,6 +3,8 @@
 > 用 AI 設計 LINE 貼圖的完整流程，從概念到上架。
 > A Claude Code skill for designing LINE sticker sets with AI — from concept to submission-ready files.
 
+**English** | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
+
 <p align="center">
   <img src="docs/pipeline-overview.svg" alt="Pipeline Overview" width="700">
 </p>
