@@ -7,8 +7,8 @@
   <rect x="0" y="40" width="800" height="30" fill="#CC2229"/>
   <text x="400" y="45" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="bold">六階段製作流程</text>
 
-  <!-- Phase boxes - 2 rows of 3 -->
-  <!-- Row 1 -->
+  <!-- ======== Row 1: Phase 1 → 2 → 3 (left to right) ======== -->
+
   <!-- Phase 1 -->
   <rect x="40" y="95" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#E0D5CA" stroke-width="1.5"/>
   <circle cx="70" cy="120" r="18" fill="#CC2229"/>
@@ -21,7 +21,7 @@
   <text x="55" y="220" fill="#555" font-size="12">• 文字語言選擇</text>
   <text x="55" y="239" fill="#CC2229" font-size="11" font-weight="bold">↳ 先規劃全部再動手</text>
 
-  <!-- Arrow pointing right -->
+  <!-- Arrow 1→2 (pointing right) -->
   <polygon points="285,170 270,160 270,180" fill="#CC2229"/>
 
   <!-- Phase 2 -->
@@ -36,7 +36,7 @@
   <text x="305" y="220" fill="#555" font-size="12">• 測試生成 1-2 張</text>
   <text x="305" y="239" fill="#CC2229" font-size="11" font-weight="bold">↳ 一致性的關鍵</text>
 
-  <!-- Arrow pointing right -->
+  <!-- Arrow 2→3 (pointing right) -->
   <polygon points="535,170 520,160 520,180" fill="#CC2229"/>
 
   <!-- Phase 3 -->
@@ -51,35 +51,29 @@
   <text x="555" y="220" fill="#555" font-size="12">• 統一命名規則</text>
   <text x="555" y="239" fill="#1A1A1A" font-size="11" font-weight="bold">↳ 分批降低重做成本</text>
 
-  <!-- Row 1 to Row 2 connection: Phase 3 → down → left → Phase 4 -->
-  <defs>
-    <marker id="arrowDown" markerWidth="10" markerHeight="8" refX="5" refY="8" orient="auto">
-      <polygon points="0 0, 10 0, 5 8" fill="#CC2229"/>
-    </marker>
-  </defs>
-  <!-- Vertical down from Phase 3 -->
-  <line x1="660" y1="255" x2="660" y2="275" stroke="#CC2229" stroke-width="2"/>
-  <!-- Horizontal left -->
-  <line x1="660" y1="275" x2="150" y2="275" stroke="#CC2229" stroke-width="2"/>
-  <!-- Vertical down to Phase 4 -->
-  <line x1="150" y1="275" x2="150" y2="295" stroke="#CC2229" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <!-- Arrow 3→4 (pointing DOWN) -->
+  <polygon points="652,260 642,255 662,255" fill="#CC2229"/>
+  <line x1="652" y1="260" x2="652" y2="295" stroke="#CC2229" stroke-width="2"/>
+  <polygon points="652,300 642,288 662,288" fill="#CC2229"/>
 
-  <!-- Row 2 -->
-  <!-- Phase 4 -->
-  <rect x="40" y="300" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#CC2229" stroke-width="2"/>
-  <circle cx="70" cy="325" r="18" fill="#CC2229"/>
-  <text x="70" y="331" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">4</text>
-  <text x="98" y="331" fill="#CC2229" font-size="16" font-weight="bold">品質審查 ★</text>
-  <line x1="55" y1="347" x2="250" y2="347" stroke="#F0E8E0" stroke-width="1"/>
-  <text x="55" y="368" fill="#555" font-size="12">• 必修：重複角色、符號</text>
-  <text x="55" y="387" fill="#555" font-size="12">• 應修：居中、大小一致</text>
-  <text x="55" y="406" fill="#555" font-size="12">• 可修：表情清晰度</text>
-  <text x="55" y="425" fill="#555" font-size="12">• 逐項檢查不放過</text>
-  <text x="55" y="444" fill="#CC2229" font-size="11" font-weight="bold">↳ 最重要的一步！</text>
+  <!-- ======== Row 2: Phase 4 → 5 → 6 (right to left) ======== -->
 
-  <polygon points="285,375 270,365 270,385" fill="#CC2229"/>
+  <!-- Phase 4 (right side, below Phase 3) -->
+  <rect x="540" y="300" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#CC2229" stroke-width="2"/>
+  <circle cx="570" cy="325" r="18" fill="#CC2229"/>
+  <text x="570" y="331" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">4</text>
+  <text x="598" y="331" fill="#CC2229" font-size="16" font-weight="bold">品質審查 ★</text>
+  <line x1="555" y1="347" x2="750" y2="347" stroke="#F0E8E0" stroke-width="1"/>
+  <text x="555" y="368" fill="#555" font-size="12">• 必修：重複角色、符號</text>
+  <text x="555" y="387" fill="#555" font-size="12">• 應修：居中、大小一致</text>
+  <text x="555" y="406" fill="#555" font-size="12">• 可修：表情清晰度</text>
+  <text x="555" y="425" fill="#555" font-size="12">• 逐項檢查不放過</text>
+  <text x="555" y="444" fill="#CC2229" font-size="11" font-weight="bold">↳ 最重要的一步！</text>
 
-  <!-- Phase 5 -->
+  <!-- Arrow 4→5 (pointing left) -->
+  <polygon points="520,375 535,365 535,385" fill="#CC2229"/>
+
+  <!-- Phase 5 (middle) -->
   <rect x="290" y="300" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#E0D5CA" stroke-width="1.5"/>
   <circle cx="320" cy="325" r="18" fill="#1A1A1A"/>
   <text x="320" y="331" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">5</text>
@@ -91,19 +85,20 @@
   <text x="305" y="425" fill="#555" font-size="12">• padding 微調大小</text>
   <text x="305" y="444" fill="#1A1A1A" font-size="11" font-weight="bold">↳ 一行指令自動完成</text>
 
-  <polygon points="535,375 520,365 520,385" fill="#CC2229"/>
+  <!-- Arrow 5→6 (pointing left) -->
+  <polygon points="270,375 285,365 285,385" fill="#CC2229"/>
 
-  <!-- Phase 6 -->
-  <rect x="540" y="300" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#E0D5CA" stroke-width="1.5"/>
-  <circle cx="570" cy="325" r="18" fill="#1A1A1A"/>
-  <text x="570" y="331" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">6</text>
-  <text x="598" y="331" fill="#1A1A1A" font-size="16" font-weight="bold">最終檢查</text>
-  <line x1="555" y1="347" x2="750" y2="347" stroke="#F0E8E0" stroke-width="1"/>
-  <text x="555" y="368" fill="#555" font-size="12">• 驗證所有尺寸</text>
-  <text x="555" y="387" fill="#555" font-size="12">• 確認檔案 ≤ 1MB</text>
-  <text x="555" y="406" fill="#555" font-size="12">• 小尺寸預覽測試</text>
-  <text x="555" y="425" fill="#555" font-size="12">• 產出總表報告</text>
-  <text x="555" y="444" fill="#1A1A1A" font-size="11" font-weight="bold">↳ 上架前最後把關</text>
+  <!-- Phase 6 (left side) -->
+  <rect x="40" y="300" width="225" height="155" fill="#FFFFFF" rx="10" stroke="#E0D5CA" stroke-width="1.5"/>
+  <circle cx="70" cy="325" r="18" fill="#1A1A1A"/>
+  <text x="70" y="331" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold">6</text>
+  <text x="98" y="331" fill="#1A1A1A" font-size="16" font-weight="bold">最終檢查</text>
+  <line x1="55" y1="347" x2="250" y2="347" stroke="#F0E8E0" stroke-width="1"/>
+  <text x="55" y="368" fill="#555" font-size="12">• 驗證所有尺寸</text>
+  <text x="55" y="387" fill="#555" font-size="12">• 確認檔案 ≤ 1MB</text>
+  <text x="55" y="406" fill="#555" font-size="12">• 小尺寸預覽測試</text>
+  <text x="55" y="425" fill="#555" font-size="12">• 產出總表報告</text>
+  <text x="55" y="444" fill="#1A1A1A" font-size="11" font-weight="bold">↳ 上架前最後把關</text>
 
   <!-- Watermark -->
   <text x="755" y="488" text-anchor="end" fill="#AAAAAA" font-size="12">https://www.vista.tw</text>
